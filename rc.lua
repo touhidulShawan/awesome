@@ -359,7 +359,7 @@ globalkeys = gears.table.join(
     ),
     -- lockscreen
     awful.key(
-        { modkey },
+        { modkey, altkey },
         "l",
         function()
             awful.util.spawn("betterlockscreen -l")

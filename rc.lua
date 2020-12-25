@@ -572,5 +572,6 @@ awful.spawn.with_shell("nitrogen --restore")
 awful.spawn.with_shell("blueman-applet")
 awful.spawn.with_shell("pa-applet") -- sound applet
 awful.spawn.with_shell("nm-applet")
+awful.spawn.with_shell("cbatticon -u 20 -i notification -c 'poweroff' -l 15 -r 3")
 
 

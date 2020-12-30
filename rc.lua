@@ -391,6 +391,15 @@ globalkeys = gears.table.join(
             awful.util.spawn("ibus emoji")
         end,
         {description = "launch emoji", group = "custom"}
+   ),
+   -- launch copyq
+   awful.key(
+        {modkey},
+        "a",
+        function()
+          awful.util.spawn("copyq")
+        end,
+        {description = "launch copyq", group = "custom"}
    )
 )
 
@@ -587,8 +596,10 @@ awful.spawn.with_shell("lxsession")
 awful.spawn.with_shell("picom --config  $HOME/.config/picom/picom.conf")
 awful.spawn.with_shell("nitrogen --restore")
 awful.spawn.with_shell("blueman-applet")
-awful.spawn.with_shell("pa-applet") -- sound applet
+--awful.spawn.with_shell("pa-applet") -- sound applet
+awful.spawn.with_shell("volumeicon") -- sound applet
 awful.spawn.with_shell("nm-applet")
 awful.spawn.with_shell("cbatticon -u 20 -i notification -c 'poweroff' -l 15 -r 3")
+awful.spawn.with_shell("copyq")
 
 

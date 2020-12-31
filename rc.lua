@@ -391,15 +391,6 @@ globalkeys = gears.table.join(
             awful.util.spawn("ibus emoji")
         end,
         {description = "launch emoji", group = "custom"}
-   ),
-   -- launch copyq
-   awful.key(
-        {modkey},
-        "a",
-        function()
-          awful.util.spawn("copyq")
-        end,
-        {description = "launch copyq", group = "custom"}
    )
 )
 

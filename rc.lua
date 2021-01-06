@@ -62,13 +62,15 @@ modkey = "Mod4"
 altkey = "Mod1"
 
 -- Theming
-beautiful.bg_normal = "#202734"
-beautiful.bg_focus = "#262626"
-beautiful.fg_normal = "#CBCCC6"
-beautiful.fg_focus = "#F2E205"
+beautiful.bg_normal = "#0A0E14"
+beautiful.bg_focus = "#01060E"
+beautiful.bg_urgent = "#01060E"
+beautiful.fg_normal = "#C7C7C7"
+beautiful.fg_focus = "#FFB454"
+beautiful.fg_urgent = "#FFB454"
 beautiful.border_width = 2
 beautiful.border_normal = "#262322"
-beautiful.border_focus = "#22A2AF"
+beautiful.border_focus = "#90E1C6"
 beautiful.border_marked = "#262322"
 beautiful.maximized_hide_border = true
 beautiful.font = "JetBrains Mono Regular 10"

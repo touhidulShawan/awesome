@@ -393,6 +393,16 @@ globalkeys = gears.table.join(
         {description = "launch emoji", group = "custom"}
    ),
 
+   -- launch copyq window
+   awful.key(
+        { modkey },
+        "a",
+        function()
+            awful.util.spawn("copyq toggle")
+        end,
+        {description = "open copyq window", group="custom"}
+   ),
+
    -- Brightness
    awful.key(
         {},

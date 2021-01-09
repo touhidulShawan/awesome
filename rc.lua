@@ -1,5 +1,3 @@
--- If LuaRocks is installed, make sure that packages installed through it are
--- found (e.g. lgi). If LuaRocks is not installed, do nothing.
 pcall(require, "luarocks.loader")
 
 -- Standard awesome library
@@ -67,15 +65,15 @@ beautiful.bg_focus = "#01060E"
 beautiful.bg_urgent = "#01060E"
 beautiful.fg_normal = "#C7C7C7"
 beautiful.fg_focus = "#FFB454"
-beautiful.fg_urgent = "#FFB454"
+beautiful.fg_urgent = "#0DE9FA"
 beautiful.border_width = 2
 beautiful.border_normal = "#262322"
-beautiful.border_focus = "#90E1C6"
-beautiful.border_marked = "#262322"
+beautiful.border_focus = "#46d9ff"
+beautiful.border_marked = "#3ca4d8"
+beautiful.border_color = "#282c34"
 beautiful.maximized_hide_border = true
 beautiful.font = "JetBrains Mono Regular 10"
-beautiful.border_color = "#261522"
-
+beautiful.useless_gap = 4
 
 --Notification configuration
 naughty.config.defaults['icon_size'] = 100
@@ -599,8 +597,6 @@ client.connect_signal("focus", function(c) c.border_color = beautiful.border_foc
 client.connect_signal("unfocus", function(c) c.border_color = beautiful.border_normal end)
 -- }}}
 
---Gap
-beautiful.useless_gap = 4
 
 -- Autostart
 awful.spawn.with_shell("lxsession")

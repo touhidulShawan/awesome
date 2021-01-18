@@ -44,7 +44,7 @@ end
 
 -- {{{ Variable definitions
 -- Themes define colours, icons, font and wallpapers.
-beautiful.init(gears.filesystem.get_themes_dir() .. "default/theme.lua")
+beautiful.init(gears.filesystem.get_themes_dir() .. "zenburn/theme.lua")
 
 -- This is used later as the default terminal and editor to run.
 terminal = "alacritty"
@@ -60,20 +60,20 @@ modkey = "Mod4"
 altkey = "Mod1"
 
 -- Theming
-beautiful.bg_normal = "#0A0E14"
-beautiful.bg_focus = "#01060E"
-beautiful.bg_urgent = "#01060E"
-beautiful.fg_normal = "#C7C7C7"
-beautiful.fg_focus = "#FFB454"
-beautiful.fg_urgent = "#0DE9FA"
-beautiful.border_width = 2
-beautiful.border_normal = "#262322"
-beautiful.border_focus = "#46d9ff"
-beautiful.border_marked = "#3ca4d8"
-beautiful.border_color = "#282c34"
-beautiful.maximized_hide_border = true
-beautiful.font = "JetBrains Mono Regular 10"
-beautiful.useless_gap = 4
+--beautiful.bg_normal = "#0A0E14"
+--beautiful.bg_focus = "#01060E"
+--beautiful.bg_urgent = "#01060E"
+--beautiful.fg_normal = "#C7C7C7"
+--beautiful.fg_focus = "#FFB454"
+--beautiful.fg_urgent = "#0DE9FA"
+--beautiful.border_width = 2
+--beautiful.border_normal = "#262322"
+--beautiful.border_focus = "#46d9ff"
+--beautiful.border_marked = "#3ca4d8"
+--beautiful.border_color = "#282c34"
+--beautiful.maximized_hide_border = true
+--beautiful.font = "JetBrains Mono Regular 10"
+--beautiful.useless_gap = 4
 
 --Notification configuration
 naughty.config.defaults['icon_size'] = 100
@@ -583,8 +583,8 @@ awful.rules.rules = {
       }, properties = { floating = true }},
 
     -- Set Firefox to always map on the tag named "2" on screen 1.
-    -- { rule = { class = "Firefox" },
-    --   properties = { screen = 1, tag = "2" } },
+     { rule = { class = "Firefox" },
+       properties = { screen = 1, tag = "2" } },
 }
 -- }}}
 

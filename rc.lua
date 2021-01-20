@@ -319,7 +319,7 @@ globalkeys = gears.table.join(
         function()
             os.execute(
                 string.format(
-                    "dmenu_run -c -l 15 -i -fn 'JetBrains Mono' -nb '%s' -nf '%s' -sb '%s' -sf '%s'",
+                    "dmenu_run -c -l 15 -i -fn 'JetBrains Mono Medium 10' -nb '%s' -nf '%s' -sb '%s' -sf '%s'",
                     beautiful.bg_normal,
                     beautiful.fg_normal,
                     beautiful.bg_focus,

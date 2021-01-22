@@ -44,7 +44,7 @@ end
 
 -- {{{ Variable definitions
 -- Themes define colours, icons, font and wallpapers.
-beautiful.init(gears.filesystem.get_themes_dir() .. "zenburn/theme.lua")
+beautiful.init(gears.filesystem.get_themes_dir() .. "nightowl/theme.lua")
 
 -- This is used later as the default terminal and editor to run.
 terminal = "alacritty"
@@ -100,8 +100,7 @@ awful.layout.layouts = {
    --awful.layout.suit.tile.left,
    --awful.layout.suit.tile.bottom,
    --awful.layout.suit.tile.top,
-   --awful.layout.suit.fair,
-   --awful.layout.suit.fair.horizontal,
+   --awful.layout.suit.fair, awful.layout.suit.fair.horizontal,
    --awful.layout.suit.spiral,
    --awful.layout.suit.spiral.dwindle,
    --awful.layout.suit.max,

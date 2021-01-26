@@ -378,7 +378,8 @@ globalkeys = gears.table.join(
         { modkey, altkey },
         "l",
         function()
-            awful.util.spawn("betterlockscreen -l")
+            --awful.util.spawn("betterlockscreen -l")
+            awful.util.spawn("dm-tool switch-to-greeter")
         end,
         {description = "Lockscreen", group= "custom"}
    ),

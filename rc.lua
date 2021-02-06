@@ -313,21 +313,41 @@ globalkeys = gears.table.join(
 ),
 
     -- run dmenu
+  --  awful.key(
+  --      {altkey},
+  --      "space",
+  --      function()
+  --          os.execute(
+  --              string.format(
+  --                  "dmenu_run -c -l 15 -i -fn 'JetBrains Mono Medium 10' -nb '%s' -nf '%s' -sb '%s' -sf '%s'",
+  --                  beautiful.bg_normal,
+  --                  beautiful.fg_normal,
+  --                  beautiful.bg_focus,
+  --                  beautiful.fg_focus
+  --              )
+  --          )
+  --      end,
+  --      {description = "show dmenu", group = "launcher"}
+  --  ),
+  --
+  --  run rofi
     awful.key(
         {altkey},
         "space",
         function()
-            os.execute(
-                string.format(
-                    "dmenu_run -c -l 15 -i -fn 'JetBrains Mono Medium 10' -nb '%s' -nf '%s' -sb '%s' -sf '%s'",
-                    beautiful.bg_normal,
-                    beautiful.fg_normal,
-                    beautiful.bg_focus,
-                    beautiful.fg_focus
-                )
-            )
+            awful.util.spawn(" rofi -show drun  -icon-theme 'Papirus' -show-icons ")
         end,
-        {description = "show dmenu", group = "launcher"}
+        {description = "launch rofi", group = 'launcher'}
+    ),
+
+  --  run rofi to navigate all active window
+    awful.key(
+        {altkey, "Shift"},
+        "space",
+        function()
+            awful.util.spawn("rofi -show window -icon-theme 'Papirus' -show-icons")
+        end,
+        {description = "launch rofi to navigate active window", group = 'launcher'}
     ),
     -- Launch Firefox
     awful.key(

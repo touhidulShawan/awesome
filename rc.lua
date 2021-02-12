@@ -44,7 +44,7 @@ end
 
 -- {{{ Variable definitions
 -- Themes define colours, icons, font and wallpapers.
-beautiful.init(gears.filesystem.get_themes_dir() .. "nightowl/theme.lua")
+beautiful.init(gears.filesystem.get_themes_dir() .. "gruvbox/theme.lua")
 
 -- This is used later as the default terminal and editor to run.
 terminal = "alacritty"

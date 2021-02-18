@@ -368,14 +368,14 @@ globalkeys = gears.table.join(
         end,
         {description = "launch google chrome", group = "browser"}
     ),
-    -- Launch pcmanfm
+    -- Launch thunar
     awful.key(
         {modkey},
         "e",
         function()
-            awful.util.spawn("pcmanfm")
+            awful.util.spawn("thunar")
         end,
-        {description = "launch pcmanfm ", group = "custom"}
+        {description = "launch thunar", group = "custom"}
     ),
     -- ScreenShot
     awful.key(

@@ -638,6 +638,5 @@ awful.spawn.with_shell("blueman-applet")
 awful.spawn.with_shell("nm-applet")
 awful.spawn.with_shell("cbatticon -u 20 -i notification -c 'poweroff' -l 15 -r 3")
 awful.spawn.with_shell("copyq")
-awful.spawn.with_shell("volumeicon")
 
 

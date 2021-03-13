@@ -10,7 +10,6 @@ local wibox = require("wibox")
 local beautiful = require("beautiful")
 -- Notification library
 local naughty = require("naughty")
-local menubar = require("menubar")
 local hotkeys_popup = require("awful.hotkeys_popup")
 local dpi = require("beautiful.xresources").apply_dpi
 -- Enable hotkeys help widget for VIM and other apps
@@ -41,7 +40,7 @@ end
 -- {{{ Variable definitions
 -- Themes define colours, icons, font and wallpapers.
 -- beautiful.init(gears.filesystem.get_themes_dir() .. "gruvbox/theme.lua")
-beautiful.init(gears.filesystem.get_themes_dir() .. "dracula/theme.lua")
+beautiful.init("/home/shawan/.config/awesome/themes/dracula/theme.lua")
 
 -- This is used later as the default terminal and editor to run.
 terminal = "alacritty"
@@ -55,22 +54,6 @@ editor_cmd = terminal .. " -e " .. editor
 -- However, you can use another modifier like Mod1, but it may interact with others.
 modkey = "Mod4"
 altkey = "Mod1"
-
--- Theming
--- beautiful.bg_normal = "#0A0E14"
--- beautiful.bg_focus = "#01060E"
--- beautiful.bg_urgent = "#01060E"
--- beautiful.fg_normal = "#C7C7C7"
--- beautiful.fg_focus = "#FFB454"
--- beautiful.fg_urgent = "#0DE9FA"
--- beautiful.border_width = 2
--- beautiful.border_normal = "#262322"
--- beautiful.border_focus = "#46d9ff"
--- beautiful.border_marked = "#3ca4d8"
--- beautiful.border_color = "#282c34"
--- beautiful.maximized_hide_border = true
--- beautiful.font = "JetBrains Mono Regular 10"
--- beautiful.useless_gap = 4
 
 -- Notification configuration
 naughty.config.defaults['icon_size'] = 100

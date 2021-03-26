@@ -7,7 +7,8 @@ theme.wallpaper = theme_dir .. "dracula/arch.png"
 -- }}}
 
 -- {{{ Styles
-theme.font      = "JetBrains Mono Nerd Font Medium 10"
+--theme.font      = "JetBrains Mono Nerd Font Medium 10"
+theme.font      = "SauceCodePro Nerd Font Mono SemiBold 11"
 
 -- {{{ Colors
 theme.fg_normal  = "#F8F8F2"
@@ -22,8 +23,8 @@ theme.bg_systray = "#44475A"
 -- {{{ Borders
 theme.useless_gap   = dpi(4)
 theme.border_width  = dpi(3)
-theme.border_normal = "#282A36" 
-theme.border_focus  = "#6272A4" 
+theme.border_normal = "#282A36"
+theme.border_focus  = "#6272A4"
 theme.border_marked = "#44475A"
 -- }}}
 

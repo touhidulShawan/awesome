@@ -12,7 +12,7 @@ theme.font      = "SauceCodePro Nerd Font Mono SemiBold 11"
 
 -- {{{ Colors
 theme.fg_normal  = "#F8F8F2"
-theme.fg_focus   = "#50fa7b"
+theme.fg_focus   = "#ff79c6"
 theme.fg_urgent  = "#F8F8F2"
 theme.bg_normal  = "#282A36"
 theme.bg_focus   = "#44475a"

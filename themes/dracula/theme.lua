@@ -12,17 +12,17 @@ theme.font      = "SauceCodePro Nerd Font Mono SemiBold 11"
 
 -- {{{ Colors
 theme.fg_normal  = "#F8F8F2"
-theme.fg_focus   = "#F8F8F2"
+theme.fg_focus   = "#282a36"
 theme.fg_urgent  = "#F8F8F2"
 theme.bg_normal  = "#282A36"
-theme.bg_focus   = "#6272A4"
+theme.bg_focus   = "#50fa7b"
 theme.bg_urgent  = "#FF5555"
 theme.bg_systray = "#44475A"
 -- }}}
 
 -- {{{ Borders
-theme.useless_gap   = dpi(4)
-theme.border_width  = dpi(3)
+theme.useless_gap   = 5
+theme.border_width  = 2
 theme.border_normal = "#44475a"
 theme.border_focus  = "#ff79c6"
 theme.border_marked = "#bd93f9"

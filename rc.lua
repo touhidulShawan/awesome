@@ -11,7 +11,6 @@ local beautiful = require("beautiful")
 -- Notification library
 local naughty = require("naughty")
 local hotkeys_popup = require("awful.hotkeys_popup")
-local dpi = require("beautiful.xresources").apply_dpi
 -- Enable hotkeys help widget for VIM and other apps
 -- when client with a matching name is opened:
 require("awful.hotkeys_popup.keys")
@@ -427,3 +426,4 @@ awful.spawn.with_shell("blueman-applet")
 awful.spawn.with_shell("nm-applet")
 awful.spawn.with_shell("cbatticon -u 20 -i notification -c 'poweroff' -l 15 -r 3")
 awful.spawn.with_shell("copyq")
+awful.spawn.with_shell("volumeicon")

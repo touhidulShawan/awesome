@@ -1,7 +1,7 @@
 pcall(require, "luarocks.loader")
 
 -- Standard awesome library
-local gears =                   require("gears")
+local gears =require("gears")
 local awful = require("awful")
 require("awful.autofocus")
 -- Widget and layout library
@@ -113,20 +113,6 @@ end), awful.button({}, 5, function(t)
     awful.tag.viewprev(t.screen)
 end))
 
-local tasklist_buttons = gears.table.join(awful.button({}, 1, function(c)
-    if c == client.focus then
-        c.minimized = true
-    else
-        c:emit_signal("request::activate", "tasklist", {raise = true})
-    end
-end), awful.button({}, 3, function()
-    awful.menu.client_list({theme = {width = 250}})
-end), awful.button({}, 4, function()
-    awful.client.focus.byidx(1)
-end), awful.button({}, 5, function()
-    awful.client.focus.byidx(-1)
-end))
-
 local function set_wallpaper(s)
     -- Wallpaper
     if beautiful.wallpaper then
@@ -164,7 +150,7 @@ awful.screen.connect_for_each_screen(function(s)
     -- Create a taglist widget
     s.mytaglist = awful.widget.taglist {screen = s, filter = awful.widget.taglist.filter.all, buttons = taglist_buttons}
     -- Create the wibox
-    s.mywibox = awful.wibar({position = "top", screen = l, bg = beautiful.bg_normal, fg = beautiful.fg_normal, height = dpi(22)})
+    s.mywibox = awful.wibar({position = "top", screen = s, bg = beautiful.bg_normal, fg = beautiful.fg_normal, height = 22 })
 
     -- Add widgets to the wibox
     s.mywibox:setup{
@@ -441,4 +427,3 @@ awful.spawn.with_shell("blueman-applet")
 awful.spawn.with_shell("nm-applet")
 awful.spawn.with_shell("cbatticon -u 20 -i notification -c 'poweroff' -l 15 -r 3")
 awful.spawn.with_shell("copyq")
-

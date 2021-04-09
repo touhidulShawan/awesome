@@ -242,7 +242,7 @@ end, {description = "toggle statusbar"}), -- run dmenu
 --
 --  run rofi
 awful.key({altkey}, "space", function()
-    awful.util.spawn(" rofi -show drun  -icon-theme 'Papirus' -show-icons ")
+    awful.util.spawn(" rofi -show drun  -icon-theme 'Breeze' -show-icons ")
 end, {description = "launch rofi", group = 'launcher'}), --  run rofi to navigate all active window
 awful.key({altkey, "Shift"}, "space", function()
     awful.util.spawn("rofi -show window -icon-theme 'Papirus' -show-icons")

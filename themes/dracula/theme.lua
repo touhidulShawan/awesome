@@ -29,8 +29,8 @@ theme.border_marked = "#8be9fd"
 -- }}}
 
 -- {{{ Taglist
-theme.taglist_squares_sel   = theme_dir .. "dracula/taglist/squarefz.png"
-theme.taglist_squares_unsel = theme_dir .. "dracula/taglist/squarez.png"
+theme.taglist_squares_sel   = "/home/shawan/.config/awesome/themes/dracula/taglist/squarefz.png"
+theme.taglist_squares_unsel = "/home/shawan/.config/awesome/themes/dracula/taglist/squarez.png"
 --theme.taglist_squares_resize = "false"
 -- }}}
 

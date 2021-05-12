@@ -40,6 +40,7 @@ end
 -- Themes define colours, icons, font and wallpapers.
 -- beautiful.init(gears.filesystem.get_themes_dir() .. "gruvbox/theme.lua")
 beautiful.init("/home/shawan/.config/awesome/themes/dracula/theme.lua")
+--beautiful.init("/home/shawan/.config/awesome/themes/nord/theme.lua")
 
 -- This is used later as the default terminal and editor to run.
 terminal = "alacritty"

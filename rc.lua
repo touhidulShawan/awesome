@@ -367,7 +367,13 @@ awful.rules.rules = {
          screen = awful.screen.preferred,
          placement = awful.placement.no_overlap + awful.placement.no_offscreen
       }
-   }, -- Floating clients.
+   },
+   -- My custom rule
+   {rule_any = {class = { "firefox", "Google-chrome", "Brave-browser" }}, properties = {screen = 1, tag = " BROWSER "}},
+   {rule = {class = "Code"}, properties = {screen = 1, tag = " CODE "}},
+   {rule_any = {class = {"Thunar", "Pcmanfm", "mpv" , "vlc", "Transmission-gtk"}}, properties={screen = 1, tag = " MEDIA "}},
+   {rule_any = {class = {"Gimp-2.10", "Nitrogen", "obs"}}, properties={screen = 1, tag = " WORKSPACE "}},
+   -- Floating clients.
    {
       rule_any = {
          instance = {
@@ -393,8 +399,7 @@ awful.rules.rules = {
          }
       },
       properties = {floating = true}
-   }, -- Set Firefox to always map on the tag named "2" on screen 1.
-   {rule = {class = "Firefox"}, properties = {screen = 1, tag = "2"}}
+   },
 }
 -- }}}
 

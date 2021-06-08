@@ -374,6 +374,7 @@ awful.rules.rules = {
    {rule = {class = "Code"}, properties = {screen = 1, tag = " CODE "}},
    {rule_any = {class = {"Thunar", "Pcmanfm", "mpv" , "vlc", "Transmission-gtk"}}, properties={screen = 1, tag = " MEDIA "}},
    {rule_any = {class = {"Gimp-2.10", "Nitrogen", "obs"}}, properties={screen = 1, tag = " WORKSPACE "}},
+   {rule_any = {class = {"Image Lounge"}}, properties={floating = true}},
    -- Floating clients.
    {
       rule_any = {
@@ -397,6 +398,7 @@ awful.rules.rules = {
             "AlarmWindow", -- Thunderbird's calendar.
             "ConfigManager", -- Thunderbird's about:config.
             "pop-up" -- e.g. Google Chrome's (detached) Developer Tools.
+
          }
       },
       properties = {floating = true}

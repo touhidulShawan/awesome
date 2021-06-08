@@ -150,7 +150,7 @@ awful.tag({" HOME ", " BROWSER ", " CODE ", " WORKSPACE ", " MEDIA "}, s, awful.
 -- Create a taglist widget
 s.mytaglist = awful.widget.taglist {screen = s, filter = awful.widget.taglist.filter.all, buttons = taglist_buttons}
 -- Create the wibox
-s.mywibox = awful.wibar({position = "top", screen = s, bg = beautiful.bg_normal, fg = beautiful.fg_normal, height = 22 })
+s.mywibox = awful.wibar({position = "top", screen = s,  bg = beautiful.bg_normal, fg = beautiful.fg_normal, height = 22 })
 
 -- Add widgets to the wibox
 s.mywibox:setup{

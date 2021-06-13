@@ -372,7 +372,7 @@ awful.rules.rules = {
    -- My custom rule
    {rule_any = {class = { "firefox", "Google-chrome", "Brave-browser" }}, properties = {screen = 1, tag = " BROWSER "}},
    {rule = {class = "Code"}, properties = {screen = 1, tag = " CODE "}},
-   {rule_any = {class = {"Thunar", "Pcmanfm", "mpv", "vlc", "Transmission-gtk"}}, properties={screen = 1, tag = " MEDIA "}},
+   {rule_any = {class = {"Thunar", "Pcmanfm", "vlc", "Transmission-gtk"}}, properties={screen = 1, tag = " MEDIA "}},
    {rule_any = {class = {"Gimp-2.10", "Nitrogen", "obs"}}, properties={screen = 1, tag = " WORKSPACE "}},
    {rule_any = {class = {"Image Lounge" , "xdman-Main"}}, properties={floating = true}},
    -- Floating clients.

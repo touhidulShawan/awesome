@@ -375,7 +375,7 @@ awful.rules.rules = {
    {rule_any = {class = {"Thunar", "Pcmanfm", "vlc", "Transmission-gtk"}}, properties={screen = 1, tag = " MEDIA "}},
    {rule_any = {class = {"Gimp-2.10", "Nitrogen", "obs"}}, properties={screen = 1, tag = " WORKSPACE "}},
    {rule_any = {class = {"Image Lounge" , "xdman-Main"}}, properties={floating = true}},
-   {rule_any = {class = {"mpv"}}, properties={screen = 1, tag = " MEDIA " ,  fullscreen = true}},
+   {rule_any = {class = {"mpv"}}, properties={screen = 1, tag = " MEDIA ", fullscreen = true}},
    -- Floating clients.
    {
       rule_any = {

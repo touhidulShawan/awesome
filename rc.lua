@@ -431,7 +431,7 @@ end)
 -- Autostart
 awful.spawn.with_shell("lxsession")
 awful.spawn.with_shell("picom --config  $HOME/.config/picom/picom.conf")
-awful.spawn.with_shell("nitrogen --restore")
+awful.spawn.with_shell("nitrogen --set-zoom-fill --random ~/Pictures/wallpaper")
 awful.spawn.with_shell("blueman-applet")
 awful.spawn.with_shell("nm-applet")
 awful.spawn.with_shell("cbatticon -u 20 -i notification -c 'poweroff' -l 15 -r 3")

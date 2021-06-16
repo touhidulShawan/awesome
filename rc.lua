@@ -39,6 +39,7 @@ end
 -- {{{ Variable definitions
 -- Themes define colours, icons, font and wallpapers.
 -- beautiful.init(gears.filesystem.get_themes_dir() .. "gruvbox/theme.lua")
+--beautiful.init("/home/shawan/.config/awesome/themes/dark/theme.lua")
 beautiful.init("/home/shawan/.config/awesome/themes/dracula/theme.lua")
 --beautiful.init("/home/shawan/.config/awesome/themes/nord/theme.lua")
 

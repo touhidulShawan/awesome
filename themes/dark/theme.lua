@@ -3,7 +3,7 @@ local dpi = require("beautiful.xresources").apply_dpi
 
 -- {{{ Main
 local theme = {}
-theme.wallpaper = theme_dir .. "dracula/arch.png"
+theme.wallpaper = "~/.config/awesome/themes/dark/arch.png"
 -- }}}
 
 -- {{{ Styles
@@ -11,21 +11,21 @@ theme.wallpaper = theme_dir .. "dracula/arch.png"
 theme.font      = "SauceCodePro Nerd Font Mono SemiBold 11"
 
 -- {{{ Colors
-theme.fg_normal  = "#F8F8F2"
-theme.fg_focus   = "#ff79c6"
-theme.fg_urgent  = "#F8F8F2"
-theme.bg_normal  = "#282A36"
-theme.bg_focus   = "#44475a"
-theme.bg_urgent  = "#FF5555"
-theme.bg_systray = "#44475A"
+theme.fg_normal  = "#CAD5E2"
+theme.fg_focus   = "#F4F4F9"
+theme.fg_urgent  = "#0D0D0D"
+theme.bg_normal  = "#242B2E"
+theme.bg_focus   = "#2C3D55"
+theme.bg_urgent  = "#FF6666"
+theme.bg_systray = "#758283"
 -- }}}
 
 -- {{{ Borders
 theme.useless_gap   = 4
 theme.border_width  = 2
-theme.border_normal = "#44475a"
-theme.border_focus  = "#ff79c6"
-theme.border_marked = "#8be9fd"
+theme.border_normal = "#242B2E"
+theme.border_focus  = "#5DA3FA"
+theme.border_marked = "#FD297A"
 -- }}}
 
 -- {{{ Taglist
@@ -38,15 +38,15 @@ theme.taglist_squares_unsel = "/home/shawan/.config/awesome/themes/dracula/tagli
 -- You can add as many variables as
 -- you wish and access them by using
 -- beautiful.variable in your rc.lua
-theme.fg_widget        = "#AECF96"
-theme.fg_center_widget = "#88A175"
-theme.fg_end_widget    = "#FF5656"
-theme.bg_widget        = "#282C34"
-theme.border_widget    = "#3F3F3F"
+theme.fg_widget        = "#CAD5E2"
+theme.fg_center_widget = "#35BDD0"
+theme.fg_end_widget    = "#CAD5E2"
+theme.bg_widget        = "#242B2E"
+theme.border_widget    = "#E03B8B"
 -- }}}
 
 -- {{{ Mouse finder
-theme.mouse_finder_color = "#c792ea"
+theme.mouse_finder_color = "#02B290"
 -- mouse_finder_[timeout|animate_timeout|radius|factor]
 -- }}}
 

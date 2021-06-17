@@ -23,8 +23,8 @@ theme.bg_systray = "#44475A"
 -- {{{ Borders
 theme.useless_gap   = 4
 theme.border_width  = 2
-theme.border_normal = "#44475a"
-theme.border_focus  = "#ff79c6"
+theme.border_normal = "#282c34"
+theme.border_focus  = "#46d9ff"
 theme.border_marked = "#8be9fd"
 -- }}}
 

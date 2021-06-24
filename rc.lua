@@ -255,7 +255,12 @@ awful.util.spawn("firefox")
 end, {description = "launch firefox", group = "browser"}), -- Launch Google Chrome
 awful.key({modkey, "Shift"}, "b", function()
 awful.util.spawn("google-chrome-stable")
-end, {description = "launch google chrome", group = "browser"}), -- Launch thunar
+end, {description = "launch google chrome", group = "browser"}),
+-- Brave Browser
+awful.key({modkey}, ",", function()
+awful.util.spawn("brave")
+end, {description = "launch brave browser", group = "browser"}),
+-- Launch thunar
 awful.key({modkey}, "e", function()
 awful.util.spawn("thunar")
 end, {description = "launch thunar", group = "custom"}), -- ScreenShot

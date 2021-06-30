@@ -275,9 +275,9 @@ awful.key({modkey, altkey}, "l", function()
 awful.util.spawn("dm-tool switch-to-greeter")
 end, {description = "Lockscreen", group = "custom"}),
 -- launch emoji
---awful.key({modkey}, ".", function()
---awful.util.spawn("ibus emoji")
---end, {description = "launch emoji", group = "custom"}),
+awful.key({modkey}, ".", function()
+awful.util.spawn("emote")
+end, {description = "launch emoji", group = "custom"}),
 -- launch copyq window
 awful.key({modkey}, "a", function()
 awful.util.spawn("copyq toggle")

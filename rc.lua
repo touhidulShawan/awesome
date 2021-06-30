@@ -273,10 +273,12 @@ end, {description = "take screenshots by select", group = "custom"}), -- lockscr
 awful.key({modkey, altkey}, "l", function()
 -- awful.util.spawn("betterlockscreen -l")
 awful.util.spawn("dm-tool switch-to-greeter")
-end, {description = "Lockscreen", group = "custom"}), -- launch emoji
-awful.key({modkey}, ".", function()
-awful.util.spawn("ibus emoji")
-end, {description = "launch emoji", group = "custom"}), -- launch copyq window
+end, {description = "Lockscreen", group = "custom"}),
+-- launch emoji
+--awful.key({modkey}, ".", function()
+--awful.util.spawn("ibus emoji")
+--end, {description = "launch emoji", group = "custom"}),
+-- launch copyq window
 awful.key({modkey}, "a", function()
 awful.util.spawn("copyq toggle")
 end, {description = "open copyq window", group = "custom"}), -- Brightness

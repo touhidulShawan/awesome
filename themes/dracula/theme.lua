@@ -1,9 +1,8 @@
-local theme_dir = require("gears.filesystem").get_themes_dir()
 local dpi = require("beautiful.xresources").apply_dpi
 
 -- {{{ Main
 local theme = {}
-theme.wallpaper = theme_dir .. "dracula/arch.png"
+theme.wallpaper = "~/.config/awesome/themes/dracula/arch.png"
 -- }}}
 
 -- {{{ Styles

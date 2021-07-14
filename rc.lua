@@ -39,11 +39,7 @@ end
 -- }}}
 
 -- {{{ Variable definitions
--- Themes define colours, icons, font and wallpapers.
--- beautiful.init(gears.filesystem.get_themes_dir() .. "gruvbox/theme.lua")
---beautiful.init("/home/shawan/.config/awesome/themes/dark/theme.lua")
 beautiful.init("/home/shawan/.config/awesome/themes/dracula/theme.lua")
---beautiful.init("/home/shawan/.config/awesome/themes/nord/theme.lua")
 
 -- This is used later as the default terminal and editor to run.
 terminal = "alacritty"
@@ -159,7 +155,7 @@ awful.screen.connect_for_each_screen(function(s)
     -- Create a taglist widget
     s.mytaglist = awful.widget.taglist { screen = s, filter = awful.widget.taglist.filter.all, buttons = taglist_buttons }
     -- Create the wibox
-    s.mywibox = awful.wibar({ position = "top", screen = s, bg = beautiful.bg_normal, fg = beautiful.fg_normal, height = 22 })
+    s.mywibox = awful.wibar({ position = "top", screen = s, bg = beautiful.bg_normal, fg = beautiful.fg_normal, height = 23 })
 
     -- Add widgets to the wibox
     s.mywibox:setup {

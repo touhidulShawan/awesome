@@ -7,23 +7,23 @@ theme.wallpaper = "~/.config/awesome/themes/dracula/arch.png"
 
 -- {{{ Styles
 --theme.font      = "JetBrains Mono Nerd Font Medium 10"
-theme.font = "mononoki Nerd Font Mono Bold 11"
+theme.font = "SauceCodePro Nerd Font Semibold 11"
 
 -- {{{ Colors
 theme.fg_normal = "#F8F8F2"
-theme.fg_focus = "#50FA7B"
-theme.fg_urgent = "#F8F8F2"
+theme.fg_focus = "#FF79C6"
+theme.fg_urgent = "#282A36"
 theme.bg_normal = "#282A36"
-theme.bg_focus = "#44475a"
+theme.bg_focus = "#44475A"
 theme.bg_urgent = "#FF5555"
-theme.bg_systray = "#44475A"
+theme.bg_systray = "#262622"
 -- }}}
 
 -- {{{ Borders
 theme.useless_gap = 4
 theme.border_width = 2
 theme.border_normal = "#282c34"
-theme.border_focus = "#FF79C6"
+theme.border_focus = "#BD93F9"
 theme.border_marked = "#8be9fd"
 -- }}}
 

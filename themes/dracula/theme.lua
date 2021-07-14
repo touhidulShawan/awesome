@@ -7,7 +7,7 @@ theme.wallpaper = "~/.config/awesome/themes/dracula/arch.png"
 
 -- {{{ Styles
 --theme.font      = "JetBrains Mono Nerd Font Medium 10"
-theme.font = "SauceCodePro Nerd Font Mono SemiBold 11"
+theme.font = "mononoki Nerd Font Mono Bold 11"
 
 -- {{{ Colors
 theme.fg_normal = "#F8F8F2"
